@@ -18,7 +18,9 @@ const config: Config = {
         "primary-light": "#9cd3c0",
         secondary: "#fda98b",
         "secondary-light": "#ffbd91",
-        "custom-gray": "#363636",
+        "gray-darkest": "#363636",
+        "gray-dark": "#404040",
+        "gray-light": "#484848",
       },
       fontFamily: {
         body: ["Raleway", "sans-serif"],

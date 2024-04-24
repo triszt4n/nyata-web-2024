@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Header />
-      <div className="max-w-[1260px]">
+      <div className="max-w-[1260px] px-8 desktop:px-0">
         <Hero />
         <Programs />
         <Cards />

@@ -12,13 +12,13 @@ export function Contact() {
       <div className="flex ml-[58px]">
         <Title text="Kapcsolat" icon={<Message />} />
       </div>
-      <div className="flex space-x-[71px]">
-        <div className="w-2/3">
+      <div className="flex laptop:flex-row flex-col laptop:space-x-[71px] space-x-0 space-y-[71px] laptop:space-y-0">
+        <div className="laptop:w-2/3">
           <Box shadow="right">
             TODO: form
           </Box>
         </div>
-        <div className="w-1/3">
+        <div className="laptop:w-1/3">
           <Box shadow="right">
             <div className="flex flex-col space-y-5 items-center">
               <div className="text-2xl font-bold">

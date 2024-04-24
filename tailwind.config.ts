@@ -27,7 +27,10 @@ const config: Config = {
       boxShadow: {
         "box-left": "-12px 12px 1.6px 0px rgba(0, 0, 0, 0.25)",
         "box-right": "12px 12px 1.6px 0px rgba(0, 0, 0, 0.25)",
-      }
+      },
+      dropShadow: {
+        header: "0px 6px 4.8px rgba(0, 0, 0, 0.40)"
+      },
     },
     screens: {
       'tablet': '640px',

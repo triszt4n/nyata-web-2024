@@ -1,36 +1,24 @@
+import { Application } from "@/components/Application";
+import { Cards } from "@/components/Cards";
+import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { SignUpButton } from "@/components/SignUpButton";
+import { Location } from "@/components/Location";
+import { Programs } from "@/components/Programs";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Header />
-      <div className="max-w-[1260px] px-4">
+      <div className="max-w-[1260px]">
         <Hero />
-        wethryuestr
-        yeset,
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-
-
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt minus in mollitia provident ducimus eius quibusdam repellendus earum blanditiis natus error quas fugiat ex possimus qui laborum, neque nemo.
+        <Programs />
+        <Cards />
+        <Location />
+        <Application />
+        <Contact />
       </div>
-
       <Footer />
     </main>
   );

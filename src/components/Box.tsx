@@ -7,7 +7,7 @@ type BoxProps = {
 
 export function Box({ children, shadow }: PropsWithChildren<BoxProps>) {
   return (
-    <div className={clsx("bg-white text-black px-[58px] py-[42px]", {
+    <div className={clsx("bg-white text-black px-[58px] py-[42px] w-full", {
       "shadow-box-left": shadow === "left",
       "shadow-box-right": shadow === "right"
     })}>

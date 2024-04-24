@@ -7,7 +7,7 @@ export default function Document() {
         <meta name="title" content="NYATA 2024" />
         <meta name="description" content="Nyári Szakkollégiumi Találkozó 2024" />
       </Head>
-      <body className="font-body bg-gradient-to-b from-primary-light to-secondary-light text-white">
+      <body className="font-body text-white">
         <Main />
         <NextScript />
       </body>

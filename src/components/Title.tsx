@@ -11,6 +11,6 @@ export function Title({ text, icon }: TitleProps) {
     <span className="uppercase text-shadow z-10">
       {text}
     </span>
-    {icon && <div>{icon}</div>}
+    {icon && <div className="z-10">{icon}</div>}
   </h2>
 }

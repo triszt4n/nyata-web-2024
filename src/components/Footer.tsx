@@ -3,7 +3,7 @@ import Image from "next/image";
 import Muszak from "@/logos/muszak.png"
 
 export function Footer() {
-  return <footer className="bg-gray-700 py-28 px-16 w-full font-display">
+  return <footer className="bg-custom-gray py-28 px-16 w-full font-display">
     <LayoutGrid>
 
       <div className="flex flex-col space-y-3 laptop:col-span-4 col-start-1 text-xl font-extrabold">

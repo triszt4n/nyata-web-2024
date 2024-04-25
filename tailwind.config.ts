@@ -33,6 +33,9 @@ const config: Config = {
       dropShadow: {
         header: "0px 6px 4.8px rgba(0, 0, 0, 0.40)"
       },
+      borderWidth: {
+        10: "10px"
+      },
     },
     screens: {
       'tablet': '640px',

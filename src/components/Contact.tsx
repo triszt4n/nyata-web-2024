@@ -9,7 +9,7 @@ import Email from "@/icons/email.svg";
 export function Contact() {
   return (
     <Section id="contact" className="mt-[124px] space-y-[45px] mb-[105px]">
-      <div className="flex ml-[58px]">
+      <div className="flex tablet:ml-[58px]">
         <Title text="Kapcsolat" icon={<Message />} />
       </div>
       <div className="flex laptop:flex-row flex-col laptop:space-x-[71px] space-x-0 space-y-[71px] laptop:space-y-0">

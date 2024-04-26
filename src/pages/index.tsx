@@ -9,9 +9,9 @@ import { Programs } from "@/components/Programs";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="d-flex min-h-screen flex-col">
       <Header />
-      <div className="max-w-[1260px] px-8 desktop:px-0">
+      <div className="max-w-[1260px] mx-auto px-6 desktop:px-0">
         <Hero />
         <Programs />
         <Cards />

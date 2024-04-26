@@ -6,7 +6,7 @@ type TitleProps = {
 }
 
 export function Title({ text, icon }: TitleProps) {
-  return <h2 className="text-6xl font-extrabold flex items-center justify-center font-display relative px-2">
+  return <h2 className="text-4xl tablet:text-6xl font-extrabold flex items-center justify-center font-display relative px-2">
     <div className="absolute bg-secondary-light h-7 inset-x-0 -bottom-1 z-0" />
     <span className="uppercase text-shadow-title z-10 mr-4">
       {text}

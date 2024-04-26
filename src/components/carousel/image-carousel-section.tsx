@@ -32,7 +32,7 @@ export function ImageCarouselSection() {
                   src={item.src}
                   key={item.priority}
                   alt="Kép korábbi NYATA-ról"
-                  className="border-white border-10 object-contain shadow-lg"
+                  className="w-1/2 tablet:w-[512px] border-white border-10 object-contain shadow-lg"
                   height={288}
                   width={512}
                 />

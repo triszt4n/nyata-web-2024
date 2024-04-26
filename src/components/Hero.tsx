@@ -3,6 +3,7 @@ import { Section } from "@/components/Section";
 import { SignUpButton } from "@/components/SignUpButton";
 import { Title } from "@/components/Title";
 import Wave from "@/icons/wave.svg"
+import { ImageCarouselSection } from "./carousel/image-carousel-section";
 
 export function Hero() {
   return (
@@ -18,7 +19,7 @@ export function Hero() {
           </Box>
         </div >
         <div className="laptop:w-1/2 w-full">
-          todo: kepnezegeto
+          <ImageCarouselSection />
         </div>
       </div>
 

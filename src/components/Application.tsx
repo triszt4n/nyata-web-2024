@@ -20,7 +20,7 @@ export function Application() {
           </Box>
           <SignUpButton />
         </div>
-        <div className="relative">
+        <div className="relative mt-[200px] laptop:mt-0">
           <div className="z-10">
             <div className="absolute -top-[250px] right-[67px] z-0">
               <Message className="w-[436px] h-[382px]" />

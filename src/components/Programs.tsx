@@ -6,7 +6,7 @@ import People from "@/logos/people.svg";
 
 export function Programs() {
   return (
-    <Section id="programs" className="space-y-[29px] flex flex-col items-start w-full relative mt-28">
+    <Section id="programs" className="space-y-[29px] flex flex-col items-start w-full relative mt-20 tablet:mt-28">
       <div className="tablet:ml-[58px]">
         <Title text="Programok" icon={<Calendar />} />
       </div>

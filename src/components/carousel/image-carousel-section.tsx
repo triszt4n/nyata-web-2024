@@ -23,7 +23,7 @@ const items = [
 export function ImageCarouselSection() {
   return (
     <div className="flex justify-center">
-      <div className="w-[546px] px-4">
+      <div className="w-[312px] tablet:w-[546px] px-4">
         <Carousel
           items={items}
           renderItem={({ item, isSnapPoint, index: i }) => (

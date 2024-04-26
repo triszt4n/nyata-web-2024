@@ -8,7 +8,7 @@ import Email from "@/icons/email.svg";
 
 export function Contact() {
   return (
-    <Section id="contact" className="mt-[124px] space-y-[45px] mb-[105px]">
+    <Section id="contact" className="mt-[80px] tablet:mt-[124px] space-y-[45px] mb-[105px]">
       <div className="flex tablet:ml-[58px]">
         <Title text="Kapcsolat" icon={<Message />} />
       </div>

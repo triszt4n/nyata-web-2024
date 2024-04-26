@@ -6,7 +6,7 @@ import { BoxLighter } from "./BoxLighter";
 
 export function Location() {
   return (
-    <Section id="location" className="space-y-[44px] mt-[122px] mb-[200px]">
+    <Section id="location" className="space-y-[44px] mt-[84px] tablet:mt-[122px] mb-[100px] tablet:mb-[200px]">
       <div className="flex items-center justify-between flex-col laptop:flex-row">
         <div className="laptop:ml-[58px]">
           <Title text="Helyszín" icon={<Pin />} />

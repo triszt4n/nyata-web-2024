@@ -9,11 +9,13 @@ function HeaderLink({ target, children }: PropsWithChildren<{ target: string }>)
 }
 
 function SignUpButton() {
-  return <a href="https://ddg.gg" className="uppercase bg-white p-1">
-    <div className="bg-secondary px-5 py-2">
+  return (
+  <a href="https://ddg.gg" className="group uppercase bg-white hover:bg-black p-1">
+    <div className="bg-secondary group-hover:bg-primary-light group-hover:text-black transition-colors px-5 py-2">
       jelentkezés
     </div>
   </a>
+  )
 }
 
 function MobileHeader() {

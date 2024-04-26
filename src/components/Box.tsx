@@ -7,7 +7,7 @@ type BoxProps = HTMLProps<HTMLDivElement> & {
 
 export function Box({ children, shadow, ...rest }: PropsWithChildren<BoxProps>) {
   return (
-    <div {...rest} className={clsx(rest.className, "bg-white text-gray-dark px-[58px] py-[42px] w-full", {
+    <div {...rest} className={clsx(rest.className, "bg-white text-gray-dark px-[26px] py-[21px] tablet:px-[58px] tablet:py-[42px] w-full", {
       "shadow-box-left": shadow === "left",
       "shadow-box-right": shadow === "right"
     })}>

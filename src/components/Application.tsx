@@ -6,11 +6,11 @@ import Message from "@/logos/message.svg";
 
 export function Application() {
   return (
-    <div className="mt-[52px]">
+    <div className="mt-[26px] laptop:mt-[52px]">
       <div className="flex flex-row items-center justify-between tablet:ml-[58px]">
         <Title text="JELENTKEZÉS" icon={<Tent />} />
       </div>
-      <div className="grid grid-cols-1 laptop:grid-cols-2 gap-[71px] mt-[70px]">
+      <div className="grid grid-cols-1 laptop:grid-cols-2 gap-[71px] mt-[40px] tablet:mt-[70px]">
         <div className="flex flex-col space-y-[50px]">
           <Box shadow="left">
             <div className="text-3xl font-display">

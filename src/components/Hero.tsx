@@ -7,7 +7,7 @@ import { ImageCarouselSection } from "./carousel/image-carousel-section";
 
 export function Hero() {
   return (
-    <Section className="space-y-[35px] mt-20" id="introduction">
+    <Section className="space-y-[35px] mt-10 tablet:mt-20" id="introduction">
       <div className="flex laptop:flex-row flex-col gap-[10px]">
         <div className="space-y-[11px] laptop:w-1/2 w-full">
           <div className="flex justify-center">

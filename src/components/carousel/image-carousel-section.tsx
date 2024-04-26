@@ -23,7 +23,7 @@ const items = [
 export function ImageCarouselSection() {
   return (
     <div className="flex justify-center">
-      <div className="w-[312px] tablet:w-[546px] px-4">
+      <div className="w-[calc(75vw+34px)] tablet:w-[546px] desktop:w-[674px] px-4">
         <Carousel
           items={items}
           renderItem={({ item, isSnapPoint, index: i }) => (
@@ -32,9 +32,9 @@ export function ImageCarouselSection() {
                   src={item.src}
                   key={item.priority}
                   alt="Kép korábbi NYATA-ról"
-                  className="w-1/2 tablet:w-[512px] border-white border-10 object-contain shadow-lg"
-                  height={288}
-                  width={512}
+                  className="w-[75vw] tablet:w-[512px] desktop:w-[640px] border-white border-10 object-contain shadow-lg"
+                  height={360}
+                  width={640}
                 />
             </CarouselItem>
           )}

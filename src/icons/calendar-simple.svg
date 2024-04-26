@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 71 78"
+   fill="none"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="calendar-simple.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="4.1904069"
+     inkscape:cx="16.108221"
+     inkscape:cy="25.892473"
+     inkscape:window-width="1512"
+     inkscape:window-height="842"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1" />
+  <g
+     filter="url(#filter0_d_115_497)"
+     id="g1">
+    <path
+       d="M 7.22222,73 C 5.23611,73 3.53588,72.2852 2.12153,70.8556 0.707176,69.426 0,67.7075 0,65.7 V 14.6 C 0,12.5925 0.707176,10.874 2.12153,9.44438 3.53588,8.01479 5.23611,7.3 7.22222,7.3 H 10.8333 V 0 h 7.2223 V 7.3 H 46.9444 V 0 h 7.2223 v 7.3 h 3.6111 c 1.9861,0 3.6863,0.71479 5.1007,2.14438 C 64.2928,10.874 65,12.5925 65,14.6 v 51.1 c 0,2.0075 -0.7072,3.726 -2.1215,5.1556 C 61.4641,72.2852 59.7639,73 57.7778,73 Z m 0,-7.3 H 57.7778 V 29.2 H 7.22222 Z m 0,-43.8 H 57.7778 V 14.6 H 7.22222 Z"
+       fill="#ffffff"
+       id="path1"
+       sodipodi:nodetypes="sssscsccccccccscsscsscccccccccc" />
+    <rect
+       style="fill:#ffffff"
+       id="rect3"
+       width="7.3978496"
+       height="7.3978496"
+       x="15.511621"
+       y="37.10857" />
+    <rect
+       style="fill:#ffffff"
+       id="rect3-9"
+       width="7.3978496"
+       height="7.3978496"
+       x="28.630939"
+       y="37.073883" />
+    <rect
+       style="fill:#ffffff"
+       id="rect3-9-5"
+       width="7.3978496"
+       height="7.3978496"
+       x="41.363857"
+       y="37.073883" />
+    <rect
+       style="fill:#ffffff"
+       id="rect3-2"
+       width="7.3978496"
+       height="7.3978496"
+       x="15.568505"
+       y="48.887272" />
+    <rect
+       style="fill:#ffffff"
+       id="rect3-9-7"
+       width="7.3978496"
+       height="7.3978496"
+       x="28.687822"
+       y="48.852585" />
+    <rect
+       style="fill:#ffffff"
+       id="rect3-9-5-3"
+       width="7.3978496"
+       height="7.3978496"
+       x="41.420742"
+       y="48.852585" />
+  </g>
+  <defs
+     id="defs3">
+    <filter
+       id="filter0_d_115_497"
+       x="0"
+       y="0"
+       width="70.6"
+       height="77.6"
+       filterUnits="userSpaceOnUse"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood1" />
+      <feColorMatrix
+         in="SourceAlpha"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+         result="hardAlpha"
+         id="feColorMatrix1" />
+      <feOffset
+         dx="4"
+         dy="3"
+         id="feOffset1" />
+      <feGaussianBlur
+         stdDeviation="0.8"
+         id="feGaussianBlur1" />
+      <feComposite
+         in2="hardAlpha"
+         operator="out"
+         id="feComposite1" />
+      <feColorMatrix
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.65 0"
+         id="feColorMatrix2" />
+      <feBlend
+         mode="normal"
+         in2="BackgroundImageFix"
+         result="effect1_dropShadow_115_497"
+         id="feBlend2" />
+      <feBlend
+         mode="normal"
+         in="SourceGraphic"
+         in2="effect1_dropShadow_115_497"
+         result="shape"
+         id="feBlend3" />
+    </filter>
+  </defs>
+</svg>

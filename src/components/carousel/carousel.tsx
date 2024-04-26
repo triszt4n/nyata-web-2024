@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react";
 import { useSnapCarousel } from "react-snap-carousel";
-import LeftArrow from "@/icons/arrow-left.svg";
-import RightArrow from "@/icons/arrow-right.svg";
+import ChevronLeft from "@/icons/chevron-left.svg";
+import ChevronRight from "@/icons/chevron-right.svg";
 
 const styles = {
   root: {},
@@ -39,17 +39,17 @@ export const Carousel = <T,>({ items, renderItem }: CarouselProps<T>) => {
       className={`relative before:border-10 before:border-white before:border-opacity-60 before:absolute 
       before:-z-10 before:left-2 before:top-2 before:-right-4 before:-bottom-4`}
     >
-      <div className="absolute bottom-6 flex justify-center gap-10 w-full z-10">
-        <LeftArrow
+      <div className="absolute bottom-6 flex justify-center gap-20 w-full z-10">
+        <ChevronLeft
           className={`${
             activePageIndex === 0 ? "opacity-30" : ""
-          } cursor-pointer text-xl select-none drop-shadow-lg`}
+          } cursor-pointer h-16 w-16 select-none drop-shadow-lg`}
           onClick={() => prev()}
         />
-        <RightArrow
+        <ChevronRight
           className={`${
             activePageIndex === pages.length - 1 ? "opacity-30" : ""
-          } cursor-pointer text-xl select-none drop-shadow-lg`}
+          } cursor-pointer h-16 w-16 select-none drop-shadow-lg`}
           onClick={() => next()}
         />
       </div>

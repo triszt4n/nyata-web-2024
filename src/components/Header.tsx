@@ -1,5 +1,8 @@
 import { PropsWithChildren, useState } from "react"
 import NyataLogo from "@/logos/nyata.svg"
+import Close from "@/icons/close.svg"
+import Hamburger from "@/icons/hamburger.svg"
+import clsx from "clsx";
 
 function HeaderLink({ target, children }: PropsWithChildren<{ target: string }>) {
   return <a href={target} className="uppercase px-2 py-1 w-full laptop:w-auto laptop:p-4">{children}</a>
@@ -19,17 +22,18 @@ function MobileHeader() {
     <nav className="font-display text-2xl block laptop:hidden bg-primary sticky top-0 py-4 w-full px-3 z-50 drop-shadow-header">
       <div className="flex flex-row items-center justify-between w-full px-2">
         <NyataLogo className="w-[239px] h-[70px]" />
-        <button type="button" onClick={() => setOpen(value => !value)}>x</button>
-
+        <button type="button" onClick={() => setOpen(value => !value)} className="h-10 w-10">{open ? <Close /> : <Hamburger />}</button>
       </div>
-      {open && <div className="flex flex-col items-start space-y-4">
+      <div className={clsx("flex flex-col items-start space-y-4", {
+        "max-h-0 overflow-hidden": !open,
+        "max-h-[100vh]": open
+      })} style={{ transition: "max-height .5s" }}>
         <HeaderLink target="#introduction">bemutató</HeaderLink>
         <HeaderLink target="#programs">programok</HeaderLink>
         <HeaderLink target="#location">helyszín</HeaderLink>
         <HeaderLink target="#contact">kapcsolat</HeaderLink>
         <SignUpButton />
-
-      </div>}
+      </div>
     </nav>
   )
 }

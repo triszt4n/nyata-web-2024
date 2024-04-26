@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = withPlausibleProxy({
+  customDomain: "https://visit.kir-dev.hu",
+})({
   reactStrictMode: true,
   webpack: (config) => {
     config.module.rules.push(
@@ -16,6 +18,6 @@ const nextConfig = {
     config.resolve.alias.canvas = false;
     return config;
   },
-};
+});
 
 export default nextConfig;

@@ -10,7 +10,7 @@ export function Footer() {
         <a href="https://ddg.gg">NYATA 2024</a>
         <a href="https://ddg.gg">Adatkezelési tájékoztató</a>
         <a href="https://szakkoli.hu" target="_blank" rel="noopener noreferrer">szakkoli.hu</a>
-        <a href="https://muszak.bme.hu" target="_blank" rel="noopener noreferrer">muszak.bme.hu</a>
+        {/* <a href="https://muszak.bme.hu" target="_blank" rel="noopener noreferrer">muszak.bme.hu</a>*/}
 
       </div>
       <div className="flex flex-col items-end text-right col-span-4 col-start-10 space-y-3 text-base font-extrabold">

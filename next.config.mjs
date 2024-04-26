@@ -1,3 +1,5 @@
+import { withPlausibleProxy } from 'next-plausible'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = withPlausibleProxy({
   customDomain: "https://visit.kir-dev.hu",

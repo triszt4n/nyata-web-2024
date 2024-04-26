@@ -5,6 +5,7 @@ import Message from "@/icons/message.svg";
 import Facebbok from "@/icons/facebook.svg";
 import Instagram from "@/icons/instagram.svg";
 import Email from "@/icons/email.svg";
+import { SocialButtons } from "./SocialButtons";
 
 export function Contact() {
   return (
@@ -25,17 +26,7 @@ export function Contact() {
                 ...vagy keress minket
                 az alábbiakon!
               </div>
-              <div className="flex flex-row space-x-9">
-                <a href="https://www.facebook.com/nyata.szakkoli" target="_blank" rel="noopener noreferrer">
-                  <Facebbok className="w-[52px] h-[52px]" />
-                </a>
-                <a href="https://www.instagram.com/nyata_official/" target="_blank" rel="noopener noreferrer">
-                  <Instagram className="w-[52px] h-[52px]" />
-                </a>
-                <a href="mailto:">
-                  <Email className="w-[52px] h-[52px]" />
-                </a>
-              </div>
+              <SocialButtons />
             </div>
           </Box>
         </div>

@@ -12,13 +12,13 @@ export function Application() {
       </div>
       <div className="grid grid-cols-1 laptop:grid-cols-2 gap-[71px] mt-[40px] tablet:mt-[70px]">
         <div className="flex flex-col space-y-[50px]">
-          <Box shadow="left">
-            <div className="text-3xl font-display">
-              <strong>SUPER EARLY BIRD</strong> JEGYEK ÁPRILIS XY-IG!<br />
-              <strong>JEGYÁR:</strong> XX XXX Ft
+          <Box shadow="right">
+            <div className="text-3xl font-display space-y-2">
+              <p><strong>SUPER EARLY BIRD</strong> JEGYEK A KÉSZLET EREJÉIG!<br /></p>
+              <p><strong>JEGYÁR: 25.000 Ft-tól</strong></p>
             </div>
           </Box>
-          <SignUpButton />
+          <div className="shadow-box-right"><SignUpButton /></div>
         </div>
         <div className="relative mt-[200px] laptop:mt-0">
           <div className="z-10">
@@ -27,7 +27,9 @@ export function Application() {
             </div>
             <div className="relative">
               <Box shadow="left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis cursus turpis quis molestie. Sed sagittis vehicula erat ac venenatis. Phasellus quis tellus eget ex pellentesque ornare. Suspendisse mattis condimentum nisi quis hendrerit. Vestibulum ut feugiat nisi. Nullam a condimentum justo. Nam a maximus turpis. Suspendisse pharetra, massa id tincidunt ultricies, est nulla fringilla mi, pharetra vulputate justo ex non mi. Vestibulum quis metus hendrerit arcu sagittis facilisis id at tellus.
+                <p>Kattints a “Jelentkezem” gombra, ha Te is részt szeretnél venni a 2024-es <strong>Nyári Szakkollégiumi Találkozón!</strong></p><br />
+                <p>A kattintás után az oldal átnavigál téged a jegy- és bérletértékesítő felületre, ahol <strong>Te magad állíthatod össze saját NYATA-csomagod</strong>: beállíthatod, hány napra jönnél, szeretnél-e tábori étkezést, milyen merch cuccokat kérsz.</p><br />
+                <p>Azt javasoljuk, <strong>szerezd be minél előbb bérleted</strong>, hiszen a Super Early Bird és Early Bird jegyek csak limitált számban állnak rendelkezésünkre.</p>
               </Box>
             </div>
           </div>

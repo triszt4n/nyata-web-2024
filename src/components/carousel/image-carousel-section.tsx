@@ -4,18 +4,43 @@ import { Carousel, CarouselItem } from "./carousel";
 const items = [
   {
     priority: 1000,
-    src: "/carousel-images/20230722_181539_simi.jpg",
+    src: "/carousel-images/01.jpg",
     title: "NYATA 2023",
   },
   {
-    priority: 900,
-    src: "/carousel-images/20200725_161755_tisi.jpg",
-    title: "NYATA 2020",
+    priority: 1000,
+    src: "/carousel-images/02.jpg",
+    title: "NYATA 2023",
   },
   {
-    priority: 800,
-    src: "/carousel-images/20220731_000319_tisi.jpg",
-    title: "NYATA 2022",
+    priority: 1000,
+    src: "/carousel-images/03.jpg",
+    title: "NYATA 2023",
+  },
+  {
+    priority: 1000,
+    src: "/carousel-images/04.jpg",
+    title: "NYATA 2023",
+  },
+  {
+    priority: 1000,
+    src: "/carousel-images/05.jpg",
+    title: "NYATA 2023",
+  },
+  {
+    priority: 1000,
+    src: "/carousel-images/06.jpg",
+    title: "NYATA 2023",
+  },
+  {
+    priority: 1000,
+    src: "/carousel-images/07.jpg",
+    title: "NYATA 2023",
+  },
+  {
+    priority: 1000,
+    src: "/carousel-images/08.jpg",
+    title: "NYATA 2023",
   },
 ];
 
@@ -28,14 +53,14 @@ export function ImageCarouselSection() {
           items={items}
           renderItem={({ item, isSnapPoint, index: i }) => (
             <CarouselItem key={item.priority} isSnapPoint={isSnapPoint}>
-                <Image
-                  src={item.src}
-                  key={item.priority}
-                  alt="Kép korábbi NYATA-ról"
-                  className="w-[75vw] tablet:w-[512px] desktop:w-[640px] border-white border-10 object-contain shadow-lg"
-                  height={360}
-                  width={640}
-                />
+              <Image
+                src={item.src}
+                key={item.priority}
+                alt="Kép korábbi NYATA-ról"
+                className="w-[75vw] tablet:w-[512px] desktop:w-[640px] border-white border-10 object-contain shadow-lg"
+                height={360}
+                width={640}
+              />
             </CarouselItem>
           )}
         />

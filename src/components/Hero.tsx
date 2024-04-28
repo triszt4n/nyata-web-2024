@@ -15,7 +15,7 @@ export function Hero() {
           <div className="flex justify-center">
             <Title text="Mi az a NYATA?" icon={<Wave />} />
           </div>
-          <Box shadow="left" className="!p-0">
+          <Box shadow="right" className="!p-0">
             <div className="px-[26px] py-[21px] tablet:px-[58px] tablet:py-[42px]">
               A <b>Nyári Szakkollégiumi Találkozó</b> egy évente megrendezésre
               kerülő tábor, amely összehozza a Kárpát-medence különböző

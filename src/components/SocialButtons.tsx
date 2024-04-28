@@ -10,17 +10,17 @@ export function SocialButtons() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Facebook className="w-[52px] h-[52px]" />
+        <Facebook className="w-[52px] h-[52px] transition-colors text-primary hover:text-secondary" />
       </a>
       <a
         href="https://www.instagram.com/nyata_official/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Instagram className="w-[52px] h-[52px]" />
+        <Instagram className="w-[52px] h-[52px] transition-colors text-primary hover:text-secondary" />
       </a>
       <a href="mailto:nyata-vez@gszk.bme.hu">
-        <Email className="w-[52px] h-[52px]" />
+        <Email className="w-[52px] h-[52px] transition-colors text-primary hover:text-secondary" />
       </a>
     </div>
   );

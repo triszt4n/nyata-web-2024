@@ -1,5 +1,5 @@
 import { Box } from "@/components/Box";
-import React from "react"
+import React, { PropsWithChildren } from "react"
 
 type FeatureCardProps = {
   image: React.ReactNode;
@@ -7,7 +7,7 @@ type FeatureCardProps = {
   description: React.ReactNode;
 }
 
-export function FeatureCard({ image, title, description }: FeatureCardProps) {
+export function FeatureCard({ image, title, description, children }: PropsWithChildren<FeatureCardProps>) {
   return <Box shadow="right">
     <div className="space-y-10 flex flex-col items-center">
       {image}
@@ -17,6 +17,7 @@ export function FeatureCard({ image, title, description }: FeatureCardProps) {
 
       </div>
     </div>
+    {children}
 
   </Box>
 }

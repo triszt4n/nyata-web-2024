@@ -52,10 +52,11 @@ export function ImageCarouselSection() {
         <Carousel
           items={items}
           renderItem={({ item, isSnapPoint, index: i }) => (
-            <CarouselItem key={item.priority} isSnapPoint={isSnapPoint}>
+            <CarouselItem key={item.src} isSnapPoint={isSnapPoint}>
               <Image
+                priority
                 src={item.src}
-                key={item.priority}
+                key={item.src}
                 alt="Kép korábbi NYATA-ról"
                 className="w-[75vw] tablet:w-[512px] desktop:w-[640px] border-white border-10 object-contain shadow-lg"
                 height={360}

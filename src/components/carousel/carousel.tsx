@@ -2,6 +2,7 @@ import React, { CSSProperties } from "react";
 import { useSnapCarousel } from "react-snap-carousel";
 import ChevronLeft from "@/icons/chevron-left.svg";
 import ChevronRight from "@/icons/chevron-right.svg";
+import clsx from "clsx";
 
 const styles = {
   root: {},
@@ -32,26 +33,33 @@ interface CarouselRenderItemProps<T> {
 }
 
 export const Carousel = <T,>({ items, renderItem }: CarouselProps<T>) => {
-  const { scrollRef, pages, activePageIndex, prev, next, snapPointIndexes } =
+  const { scrollRef, pages, activePageIndex, prev, next, goTo, snapPointIndexes } =
     useSnapCarousel();
   return (
     <div
-      className={`relative before:border-10 before:border-white before:border-opacity-60 before:absolute 
-      before:-z-10 before:left-2 before:top-2 before:-right-4 before:-bottom-4`}
+      className="relative before:border-10 before:border-white before:border-opacity-60 before:absolute
+      before:-z-10 before:left-2 before:top-2 before:-right-4 before:-bottom-4"
     >
-      <div className="absolute bottom-6 flex justify-center gap-20 w-full z-10">
-        <ChevronLeft
-          className={`${
-            activePageIndex === 0 ? "opacity-30" : ""
-          } cursor-pointer h-16 w-16 select-none drop-shadow-lg`}
-          onClick={() => prev()}
-        />
-        <ChevronRight
-          className={`${
-            activePageIndex === pages.length - 1 ? "opacity-30" : ""
-          } cursor-pointer h-16 w-16 select-none drop-shadow-lg`}
-          onClick={() => next()}
-        />
+      <div className="absolute h-full tablet:h-auto items-center justify-between px-4 tablet:px-0 tablet:bottom-6 flex tablet:justify-center gap-16 tablet:gap-6 w-full z-10">
+        <button onClick={() => prev()} className="h-full pr-11 tablet:pr-0">
+          <ChevronLeft
+            className={clsx(activePageIndex === 0 && "opacity-30",
+              "cursor-pointer h-10 w-h-10 select-none drop-shadow-lg")}
+          />
+        </button>
+
+        <div className="tablet:flex items-center space-x-3 hidden">
+          {Array.from(Array(items.length).keys()).map((_, index) => (
+            <button key={index} className={clsx("w-4 h-4 rounded-full shadow-signup-button", activePageIndex === index ? "bg-primary-light" : "bg-white")} onClick={() => goTo(index)} />
+          ))}
+        </div>
+
+        <button onClick={() => next()} className="h-full pl-11 tablet:pl-0">
+          <ChevronRight
+            className={clsx(activePageIndex === pages.length - 1 && "opacity-30",
+              "cursor-pointer h-10 w-h-10 select-none drop-shadow-xl")}
+          />
+        </button>
       </div>
       <ul
         className="relative flex gap-4 overflow-hidden snap-x"

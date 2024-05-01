@@ -19,6 +19,8 @@ const styles = {
   nextPrevButtonDisabled: { opacity: 0.3 },
 } satisfies Record<string, CSSProperties>;
 
+const delay = 3000;
+
 interface CarouselProps<T> {
   readonly items: T[];
   readonly renderItem: (
@@ -35,6 +37,29 @@ interface CarouselRenderItemProps<T> {
 export const Carousel = <T,>({ items, renderItem }: CarouselProps<T>) => {
   const { scrollRef, pages, activePageIndex, prev, next, goTo, snapPointIndexes } =
     useSnapCarousel();
+
+  const timeoutRef = React.useRef<NodeJS.Timeout | null>(null);
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  React.useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () => {
+        goTo(activePageIndex === pages.length - 1 ? 0 : activePageIndex + 1)
+      },
+      delay,
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, [goTo, pages, activePageIndex]);
+
   return (
     <div
       className="relative before:border-10 before:border-white before:border-opacity-60 before:absolute
